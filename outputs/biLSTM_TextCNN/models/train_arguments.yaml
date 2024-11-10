@@ -1,0 +1,34 @@
+batch_size: 72
+checkpoint:
+config: ./configs/DOGMA_biLSTM_TextCNN.yml
+embedding_mode: lm
+eval_on_test: yes
+exp_name: biLSTM_TextCNN
+experiment_name: solubility_prediction_ESMFold_embedding
+key_format: hash
+log_iterations: 100
+loss_function: LocCrossEntropy
+max_length: 6000
+min_train_acc: 0
+model_parameters:
+  dropout: 0.2
+  kernel_size: 9
+  output_dim: 1
+model_type: biLSTM_TextCNN
+n_draws: 200
+num_epochs: 15
+optimizer: AdamW
+optimizer_parameters:
+  lr: 0.001
+  weight_decay: 0.0001
+patience: 4
+seed: 123
+solubility_loss: 0
+target: sol
+test_embeddings: ./data/test_embeddings.h5
+test_remapping: ./data/test_dataset.csv
+train_embeddings: ./data/train_embeddings.h5
+train_remapping: ./data/train_dataset.csv
+unknown_solubility: no
+val_embeddings: ./data/validation_embeddings.h5
+val_remapping: ./data/validation_dataset.csv

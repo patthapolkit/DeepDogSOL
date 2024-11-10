@@ -1,0 +1,534 @@
+Train 0, loss: 0.691362, train acc: 0.540268, train avg acc: 0.532246
+Test 0, loss: 0.672129, test acc: 0.597315, test avg acc: 0.604147
+save weights!!!
+Train 1, loss: 0.672531, train acc: 0.598714, train avg acc: 0.604915
+Train 0, loss: 0.695223, train acc: 0.519841, train avg acc: 0.509226
+Test 0, loss: 0.689632, test acc: 0.570578, test avg acc: 0.568703
+save weights!!!
+Train 1, loss: 0.689457, train acc: 0.565760, train avg acc: 0.564119
+Test 1, loss: 0.689638, test acc: 0.570578, test avg acc: 0.568783
+save weights!!!
+Train 2, loss: 0.689738, train acc: 0.560374, train avg acc: 0.558593
+Test 2, loss: 0.689602, test acc: 0.570295, test avg acc: 0.568468
+Train 3, loss: 0.689566, train acc: 0.562358, train avg acc: 0.560777
+Test 3, loss: 0.689558, test acc: 0.571429, test avg acc: 0.569481
+save weights!!!
+Train 4, loss: 0.689653, train acc: 0.571995, train avg acc: 0.569789
+Test 4, loss: 0.689612, test acc: 0.570578, test avg acc: 0.568750
+Train 5, loss: 0.689713, train acc: 0.560658, train avg acc: 0.558766
+Test 5, loss: 0.689636, test acc: 0.570011, test avg acc: 0.568188
+Train 6, loss: 0.689680, train acc: 0.565476, train avg acc: 0.563534
+Test 6, loss: 0.689618, test acc: 0.570011, test avg acc: 0.568188
+Train 7, loss: 0.689549, train acc: 0.572279, train avg acc: 0.570191
+Test 7, loss: 0.689555, test acc: 0.571429, test avg acc: 0.569569
+save weights!!!
+Train 8, loss: 0.689644, train acc: 0.556973, train avg acc: 0.555367
+Test 8, loss: 0.689519, test acc: 0.572562, test avg acc: 0.570739
+save weights!!!
+Train 9, loss: 0.689622, train acc: 0.573413, train avg acc: 0.571820
+Test 9, loss: 0.689595, test acc: 0.571145, test avg acc: 0.569223
+Train 10, loss: 0.689745, train acc: 0.569161, train avg acc: 0.567207
+Test 10, loss: 0.689586, test acc: 0.569728, test avg acc: 0.567823
+Train 11, loss: 0.689684, train acc: 0.560941, train avg acc: 0.559061
+Test 11, loss: 0.689565, test acc: 0.570862, test avg acc: 0.569094
+Train 12, loss: 0.689513, train acc: 0.568311, train avg acc: 0.566477
+Test 12, loss: 0.689539, test acc: 0.571145, test avg acc: 0.569306
+Train 13, loss: 0.689326, train acc: 0.570011, train avg acc: 0.568125
+Test 13, loss: 0.689582, test acc: 0.570011, test avg acc: 0.568288
+Train 14, loss: 0.689521, train acc: 0.568311, train avg acc: 0.566805
+Test 14, loss: 0.689563, test acc: 0.570295, test avg acc: 0.568546
+Train 0, loss: 0.695222, train acc: 0.519841, train avg acc: 0.509226
+Test 0, loss: 0.689639, test acc: 0.570578, test avg acc: 0.568676
+save weights!!!
+Train 1, loss: 0.689467, train acc: 0.565476, train avg acc: 0.563767
+Test 1, loss: 0.689645, test acc: 0.570295, test avg acc: 0.568486
+Train 2, loss: 0.689747, train acc: 0.561791, train avg acc: 0.559999
+Test 2, loss: 0.689609, test acc: 0.569728, test avg acc: 0.567899
+Train 3, loss: 0.689574, train acc: 0.563209, train avg acc: 0.561536
+Test 3, loss: 0.689565, test acc: 0.571429, test avg acc: 0.569481
+save weights!!!
+Train 4, loss: 0.689660, train acc: 0.571712, train avg acc: 0.569519
+Test 4, loss: 0.689620, test acc: 0.570295, test avg acc: 0.568479
+Train 5, loss: 0.689720, train acc: 0.560941, train avg acc: 0.559010
+Test 5, loss: 0.689643, test acc: 0.569728, test avg acc: 0.567918
+Train 6, loss: 0.689688, train acc: 0.564909, train avg acc: 0.562938
+Test 6, loss: 0.689625, test acc: 0.569728, test avg acc: 0.567918
+Train 7, loss: 0.689556, train acc: 0.571712, train avg acc: 0.569594
+Test 7, loss: 0.689562, test acc: 0.571145, test avg acc: 0.569298
+Train 8, loss: 0.689652, train acc: 0.556689, train avg acc: 0.555039
+Test 8, loss: 0.689526, test acc: 0.571995, test avg acc: 0.570144
+save weights!!!
+Train 9, loss: 0.689629, train acc: 0.573980, train avg acc: 0.572310
+Test 9, loss: 0.689602, test acc: 0.570578, test avg acc: 0.568627
+Train 10, loss: 0.689754, train acc: 0.568878, train avg acc: 0.566881
+Test 10, loss: 0.689593, test acc: 0.569161, test avg acc: 0.567227
+Train 11, loss: 0.689692, train acc: 0.560374, train avg acc: 0.558464
+Test 11, loss: 0.689572, test acc: 0.570295, test avg acc: 0.568500
+Train 12, loss: 0.689521, train acc: 0.568027, train avg acc: 0.566180
+Test 12, loss: 0.689546, test acc: 0.570862, test avg acc: 0.569008
+Train 13, loss: 0.689332, train acc: 0.569444, train avg acc: 0.567530
+Test 13, loss: 0.689589, test acc: 0.569728, test avg acc: 0.567991
+Train 14, loss: 0.689524, train acc: 0.568594, train avg acc: 0.567022
+Test 14, loss: 0.689570, test acc: 0.569728, test avg acc: 0.567951
+Train 0, loss: 0.695222, train acc: 0.519558, train avg acc: 0.508929
+Test 0, loss: 0.689629, test acc: 0.569728, test avg acc: 0.567517
+save weights!!!
+Train 1, loss: 0.689459, train acc: 0.567460, train avg acc: 0.565386
+Test 1, loss: 0.689635, test acc: 0.569444, test avg acc: 0.567326
+Train 2, loss: 0.689734, train acc: 0.563209, train avg acc: 0.561018
+Test 2, loss: 0.689598, test acc: 0.568878, test avg acc: 0.566728
+Train 3, loss: 0.689561, train acc: 0.562075, train avg acc: 0.560083
+Test 3, loss: 0.689556, test acc: 0.570578, test avg acc: 0.568317
+save weights!!!
+Train 4, loss: 0.689652, train acc: 0.570578, train avg acc: 0.568062
+Test 4, loss: 0.689610, test acc: 0.569444, test avg acc: 0.567316
+Train 5, loss: 0.689704, train acc: 0.560374, train avg acc: 0.558063
+Test 5, loss: 0.689633, test acc: 0.568878, test avg acc: 0.566758
+Train 6, loss: 0.689678, train acc: 0.566043, train avg acc: 0.563626
+Test 6, loss: 0.689616, test acc: 0.568878, test avg acc: 0.566758
+Train 7, loss: 0.689548, train acc: 0.573413, train avg acc: 0.571009
+Test 7, loss: 0.689553, test acc: 0.570295, test avg acc: 0.568165
+Train 8, loss: 0.689641, train acc: 0.557256, train avg acc: 0.555289
+Test 8, loss: 0.689517, test acc: 0.571429, test avg acc: 0.569286
+save weights!!!
+Train 9, loss: 0.689621, train acc: 0.572846, train avg acc: 0.570861
+Test 9, loss: 0.689592, test acc: 0.570011, test avg acc: 0.567754
+Train 10, loss: 0.689742, train acc: 0.566610, train avg acc: 0.564182
+Test 10, loss: 0.689583, test acc: 0.568311, test avg acc: 0.566060
+Train 11, loss: 0.689679, train acc: 0.561224, train avg acc: 0.558986
+Test 11, loss: 0.689563, test acc: 0.569444, test avg acc: 0.567348
+Train 12, loss: 0.689508, train acc: 0.570295, train avg acc: 0.568128
+Test 12, loss: 0.689536, test acc: 0.570011, test avg acc: 0.567837
+Train 13, loss: 0.689321, train acc: 0.570011, train avg acc: 0.567864
+Test 13, loss: 0.689580, test acc: 0.568878, test avg acc: 0.566817
+Train 14, loss: 0.689519, train acc: 0.569161, train avg acc: 0.567243
+Test 14, loss: 0.689561, test acc: 0.569161, test avg acc: 0.567066
+Test acc: 0.568792, Test avg acc: 0.566552
+Train 0, loss: 0.701420, train acc: 0.506803, train avg acc: 0.500358
+Test 0, loss: 0.689528, test acc: 0.525794, test avg acc: 0.500029
+save weights!!!
+Train 1, loss: 0.689772, train acc: 0.523810, train avg acc: 0.500027
+Test 1, loss: 0.689989, test acc: 0.523243, test avg acc: 0.500026
+Train 2, loss: 0.689587, train acc: 0.525227, train avg acc: 0.500029
+Test 2, loss: 0.689736, test acc: 0.524660, test avg acc: 0.500028
+Train 3, loss: 0.689954, train acc: 0.523526, train avg acc: 0.500027
+Test 3, loss: 0.689783, test acc: 0.524093, test avg acc: 0.500027
+Train 4, loss: 0.689714, train acc: 0.525510, train avg acc: 0.500029
+Test 4, loss: 0.689792, test acc: 0.524943, test avg acc: 0.500028
+Train 5, loss: 0.689993, train acc: 0.524093, train avg acc: 0.500027
+Test 5, loss: 0.689666, test acc: 0.525227, test avg acc: 0.500029
+Train 6, loss: 0.690054, train acc: 0.523526, train avg acc: 0.500000
+Test 6, loss: 0.689932, test acc: 0.523526, test avg acc: 0.500027
+Train 7, loss: 0.689985, train acc: 0.522392, train avg acc: 0.500025
+Test 7, loss: 0.690080, test acc: 0.523243, test avg acc: 0.500026
+Train 8, loss: 0.690129, train acc: 0.522959, train avg acc: 0.500026
+Test 8, loss: 0.689860, test acc: 0.524376, test avg acc: 0.500028
+Train 9, loss: 0.689687, train acc: 0.524943, train avg acc: 0.500028
+Test 9, loss: 0.689675, test acc: 0.525227, test avg acc: 0.500029
+Train 10, loss: 0.689810, train acc: 0.524093, train avg acc: 0.500027
+Test 10, loss: 0.689417, test acc: 0.526077, test avg acc: 0.500030
+save weights!!!
+Train 11, loss: 0.689416, train acc: 0.526361, train avg acc: 0.500030
+Test 11, loss: 0.689884, test acc: 0.523810, test avg acc: 0.500027
+Train 12, loss: 0.689903, train acc: 0.524093, train avg acc: 0.500027
+Test 12, loss: 0.689906, test acc: 0.523810, test avg acc: 0.500027
+Train 13, loss: 0.690172, train acc: 0.522392, train avg acc: 0.500025
+Test 13, loss: 0.689923, test acc: 0.523243, test avg acc: 0.500026
+Train 14, loss: 0.689755, train acc: 0.525227, train avg acc: 0.500029
+Test 14, loss: 0.689873, test acc: 0.524093, test avg acc: 0.500027
+Test acc: 0.524049, Test avg acc: 0.500027
+Train 0, loss: 0.6948663954223905, train acc: 0.5365513392857143, train avg acc: 0.5287916822780068, train f1: [0.43599321 0.60667772]
+Val 0, loss: 0.6895514881169355, val acc: 0.5379050925925926, val avg acc: 0.5408748908266884, val f1: [0.55127845 0.52371011]
+save weights!!!
+Train 0, loss: 0.6920136383601597, train acc: 0.5220424107142857, train avg acc: 0.5109979613047649, train f1: [0.37641063 0.6125311 ]
+Val 0, loss: 0.6930082153390955, val acc: 0.5257523148148148, val avg acc: 0.5356776514973517, val f1: [0.59936446 0.41900035]
+save weights!!!
+Train 1, loss: 0.6894698355879102, train acc: 0.5231584821428571, train avg acc: 0.5366011745812258, train f1: [0.61878207 0.36350093]
+Val 1, loss: 0.6923812605716564, val acc: 0.5269097222222222, val avg acc: 0.5365635559845262, val f1: [0.60131675 0.41835646]
+save weights!!!
+Train 2, loss: 0.689765949334417, train acc: 0.5226004464285714, train avg acc: 0.5366370973558087, train f1: [0.61782444 0.36417689]
+Val 2, loss: 0.6925476877777664, val acc: 0.5266203703703703, val avg acc: 0.5366990460718434, val f1: [0.60117016 0.41779359]
+Train 3, loss: 0.6897805247988019, train acc: 0.525390625, train avg acc: 0.5405723905723906, train f1: [0.61971831 0.36883117]
+Val 3, loss: 0.6924916881102102, val acc: 0.5277777777777778, val avg acc: 0.538046548915169, val f1: [0.60058737 0.42250531]
+save weights!!!
+Train 4, loss: 0.6898750088044575, train acc: 0.5234375, train avg acc: 0.5376033470713126, train f1: [0.61823871 0.36599852]
+Val 4, loss: 0.6922840520187661, val acc: 0.5280671296296297, val avg acc: 0.5372297431282607, val f1: [0.60267966 0.41895262]
+save weights!!!
+Train 5, loss: 0.6897213544164386, train acc: 0.5231584821428571, train avg acc: 0.5388642427347651, train f1: [0.61707372 0.36820702]
+Val 5, loss: 0.692664501843629, val acc: 0.5266203703703703, val avg acc: 0.5360455048827142, val f1: [0.60039082 0.41944642]
+Train 6, loss: 0.6895292550325394, train acc: 0.5217633928571429, train avg acc: 0.5366264243696233, train f1: [0.61603943 0.36612426]
+Val 6, loss: 0.6923097372055054, val acc: 0.5286458333333334, val avg acc: 0.5384416714242992, val f1: [0.60180885 0.4225452 ]
+save weights!!!
+Train 7, loss: 0.6892450387988772, train acc: 0.5248325892857143, train avg acc: 0.5381467111077396, train f1: [0.61721735 0.37366679]
+Val 7, loss: 0.6926980835420115, val acc: 0.5274884259259259, val avg acc: 0.5375002517403651, val f1: [0.60141567 0.41989343]
+Train 8, loss: 0.6894771158695221, train acc: 0.5245535714285714, train avg acc: 0.5377899464022863, train f1: [0.61964286 0.36607143]
+Val 8, loss: 0.6923436434180649, val acc: 0.5283564814814815, val avg acc: 0.5381368674284732, val f1: [0.60243902 0.42034139]
+Train 9, loss: 0.6894769370555878, train acc: 0.5231584821428571, train avg acc: 0.5371113427701615, train f1: [0.61775889 0.36633296]
+Val 9, loss: 0.6931202831091704, val acc: 0.5251736111111112, val avg acc: 0.5361374049492862, val f1: [0.59848299 0.41911504]
+Train 10, loss: 0.6899055519274303, train acc: 0.5248325892857143, train avg acc: 0.539659197558915, train f1: [0.61824703 0.37089028]
+Val 10, loss: 0.6924533093417132, val acc: 0.5274884259259259, val avg acc: 0.5376907397560464, val f1: [0.60083109 0.42112726]
+Train 11, loss: 0.6892369176660266, train acc: 0.5220424107142857, train avg acc: 0.5362728582736296, train f1: [0.61652116 0.36579045]
+Val 11, loss: 0.6922343903117709, val acc: 0.5283564814814815, val avg acc: 0.5375155022736668, val f1: [0.60185638 0.42157559]
+Train 12, loss: 0.6903274485043117, train acc: 0.5239955357142857, train avg acc: 0.5393589566965723, train f1: [0.61680144 0.3718704 ]
+Val 12, loss: 0.692493979577665, val acc: 0.5295138888888888, val avg acc: 0.53943397765272, val f1: [0.60341463 0.42176387]
+save weights!!!
+Train 13, loss: 0.689122776900019, train acc: 0.5226004464285714, train avg acc: 0.5361232888898599, train f1: [0.61884607 0.36132885]
+Val 13, loss: 0.6929115984174941, val acc: 0.5257523148148148, val avg acc: 0.5351916255865019, val f1: [0.59877601 0.42023346]
+Train 14, loss: 0.6890126253877368, train acc: 0.5265066964285714, train avg acc: 0.5407201614930299, train f1: [0.61993281 0.37217906]
+Val 14, loss: 0.6923477914598253, val acc: 0.5274884259259259, val avg acc: 0.5369807711668177, val f1: [0.60161015 0.41948098]
+Test acc: 0.5252525252525253, Test avg acc: 0.5392569455860595, Test f1: [0.61922487 0.36969917]
+Train 0, loss: 0.6967215367725917, train acc: 0.49441964285714285, train avg acc: 0.4913455388551327, train f1: [0.44823386 0.53347065]
+Val 0, loss: 0.6951260268688202, val acc: 0.525390625, val avg acc: 0.5, val f1: [0.         0.68886044]
+save weights!!!
+Train 1, loss: 0.6942628792354039, train acc: 0.5242745535714286, train avg acc: 0.5, train f1: [0.         0.68790042]
+Val 1, loss: 0.696049431959788, val acc: 0.5201822916666666, val avg acc: 0.5, val f1: [0.         0.68436831]
+Train 2, loss: 0.6934557982853481, train acc: 0.525390625, train avg acc: 0.5, train f1: [0.         0.68886044]
+Val 2, loss: 0.6952936748663584, val acc: 0.5231119791666666, val avg acc: 0.5, val f1: [0.         0.68689891]
+Train 3, loss: 0.693012535572052, train acc: 0.52734375, train avg acc: 0.5, train f1: [0.         0.69053708]
+Val 3, loss: 0.6952309409777323, val acc: 0.5234375, val avg acc: 0.5, val f1: [0.         0.68717949]
+Train 4, loss: 0.6934441583497184, train acc: 0.5256696428571429, train avg acc: 0.5, train f1: [0.         0.68910022]
+Val 4, loss: 0.6966357131799062, val acc: 0.5179036458333334, val avg acc: 0.5, val f1: [0.         0.68239331]
+Train 5, loss: 0.6929028885705131, train acc: 0.5284598214285714, train avg acc: 0.5, train f1: [0.         0.69149325]
+Val 5, loss: 0.6955307126045227, val acc: 0.5221354166666666, val avg acc: 0.5, val f1: [0.         0.68605646]
+Train 6, loss: 0.6931179761886597, train acc: 0.5270647321428571, train avg acc: 0.5, train f1: [0.         0.69029783]
+Val 6, loss: 0.6949657996495565, val acc: 0.5244140625, val avg acc: 0.5, val f1: [0.        0.6880205]
+Train 7, loss: 0.6936319981302533, train acc: 0.5248325892857143, train avg acc: 0.5, train f1: [0.        0.6883806]
+Val 7, loss: 0.6966825028260549, val acc: 0.5185546875, val avg acc: 0.5, val f1: [0.        0.6829582]
+Train 8, loss: 0.6939403755324227, train acc: 0.5239955357142857, train avg acc: 0.5, train f1: [0.        0.6876602]
+Val 8, loss: 0.6960212290287018, val acc: 0.5205078125, val avg acc: 0.5, val f1: [0.         0.68464997]
+Train 9, loss: 0.6935354130608695, train acc: 0.525390625, train avg acc: 0.5, train f1: [0.         0.68886044]
+Val 9, loss: 0.6948747932910919, val acc: 0.5244140625, val avg acc: 0.5, val f1: [0.        0.6880205]
+Train 10, loss: 0.6930683595793588, train acc: 0.5270647321428571, train avg acc: 0.5, train f1: [0.         0.69029783]
+Val 10, loss: 0.6956794261932373, val acc: 0.5221354166666666, val avg acc: 0.5, val f1: [0.         0.68605646]
+Train 11, loss: 0.6934364608355931, train acc: 0.5259486607142857, train avg acc: 0.5, train f1: [0.         0.68933992]
+Val 11, loss: 0.6954421897729238, val acc: 0.5227864583333334, val avg acc: 0.5, val f1: [0.         0.68661821]
+Train 12, loss: 0.6928279059273856, train acc: 0.5281808035714286, train avg acc: 0.5, train f1: [0.         0.69125434]
+Val 12, loss: 0.6941576401392618, val acc: 0.5270182291666666, val avg acc: 0.5, val f1: [0.         0.69025794]
+save weights!!!
+Train 13, loss: 0.6940148898533413, train acc: 0.5242745535714286, train avg acc: 0.5, train f1: [0.         0.68790042]
+Val 13, loss: 0.6954629719257355, val acc: 0.5231119791666666, val avg acc: 0.5, val f1: [0.         0.68689891]
+Train 14, loss: 0.6932809523173741, train acc: 0.5259486607142857, train avg acc: 0.5, train f1: [0.         0.68933992]
+Val 14, loss: 0.6958260834217072, val acc: 0.5218098958333334, val avg acc: 0.5, val f1: [0.        0.6857754]
+Test acc: 0.5255255255255256, Test avg acc: 0.5, Test f1: [0.         0.68897638]
+Train 0, loss: 0.6967215452875409, train acc: 0.49441964285714285, train avg acc: 0.4913455388551327, train f1: [0.44823386 0.53347065]
+Val 0, loss: 0.6951263944307963, val acc: 0.525390625, val avg acc: 0.5, val f1: [0.         0.68886044]
+save weights!!!
+Train 1, loss: 0.694263219833374, train acc: 0.5242745535714286, train avg acc: 0.5, train f1: [0.         0.68790042]
+Val 1, loss: 0.6960497597853342, val acc: 0.5201822916666666, val avg acc: 0.5, val f1: [0.         0.68436831]
+Train 2, loss: 0.6934561133384705, train acc: 0.525390625, train avg acc: 0.5, train f1: [0.         0.68886044]
+Val 2, loss: 0.695294032494227, val acc: 0.5231119791666666, val avg acc: 0.5, val f1: [0.         0.68689891]
+Train 3, loss: 0.6930127995354789, train acc: 0.52734375, train avg acc: 0.5, train f1: [0.         0.69053708]
+Val 3, loss: 0.6952312886714935, val acc: 0.5234375, val avg acc: 0.5, val f1: [0.         0.68717949]
+Train 4, loss: 0.6934444393430438, train acc: 0.5256696428571429, train avg acc: 0.5, train f1: [0.         0.68910022]
+Val 4, loss: 0.6966360807418823, val acc: 0.5179036458333334, val avg acc: 0.5, val f1: [0.         0.68239331]
+Train 5, loss: 0.692903186593737, train acc: 0.5284598214285714, train avg acc: 0.5, train f1: [0.         0.69149325]
+Val 5, loss: 0.6955311000347137, val acc: 0.5221354166666666, val avg acc: 0.5, val f1: [0.         0.68605646]
+Train 6, loss: 0.6931183082716805, train acc: 0.5270647321428571, train avg acc: 0.5, train f1: [0.         0.69029783]
+Val 6, loss: 0.694966197013855, val acc: 0.5244140625, val avg acc: 0.5, val f1: [0.        0.6880205]
+Train 7, loss: 0.6936323727880206, train acc: 0.5248325892857143, train avg acc: 0.5, train f1: [0.        0.6883806]
+Val 7, loss: 0.6966828405857086, val acc: 0.5185546875, val avg acc: 0.5, val f1: [0.        0.6829582]
+Train 8, loss: 0.6939406905855451, train acc: 0.5239955357142857, train avg acc: 0.5, train f1: [0.        0.6876602]
+Val 8, loss: 0.6960216164588928, val acc: 0.5205078125, val avg acc: 0.5, val f1: [0.         0.68464997]
+Train 9, loss: 0.6935357195990426, train acc: 0.525390625, train avg acc: 0.5, train f1: [0.         0.68886044]
+Val 9, loss: 0.6948751409848531, val acc: 0.5244140625, val avg acc: 0.5, val f1: [0.        0.6880205]
+Train 10, loss: 0.6930687597819737, train acc: 0.5270647321428571, train avg acc: 0.5, train f1: [0.         0.69029783]
+Val 10, loss: 0.6956797937552134, val acc: 0.5221354166666666, val avg acc: 0.5, val f1: [0.         0.68605646]
+Train 11, loss: 0.6934368014335632, train acc: 0.5259486607142857, train avg acc: 0.5, train f1: [0.         0.68933992]
+Val 11, loss: 0.6954425573348999, val acc: 0.5227864583333334, val avg acc: 0.5, val f1: [0.         0.68661821]
+Train 12, loss: 0.692828186920711, train acc: 0.5281808035714286, train avg acc: 0.5, train f1: [0.         0.69125434]
+Val 12, loss: 0.6941579878330231, val acc: 0.5270182291666666, val avg acc: 0.5, val f1: [0.         0.69025794]
+save weights!!!
+Train 13, loss: 0.6940151708466666, train acc: 0.5242745535714286, train avg acc: 0.5, train f1: [0.         0.68790042]
+Val 13, loss: 0.6954633295536041, val acc: 0.5231119791666666, val avg acc: 0.5, val f1: [0.         0.68689891]
+Train 14, loss: 0.6932812588555473, train acc: 0.5259486607142857, train avg acc: 0.5, train f1: [0.         0.68933992]
+Val 14, loss: 0.6958264807860056, val acc: 0.5218098958333334, val avg acc: 0.5, val f1: [0.        0.6857754]
+Test acc: 0.5255255255255256, Test avg acc: 0.5, Test f1: [0.         0.68897638]
+Train 0, loss: 0.6884588766098022, train acc: 0.5325, train avg acc: 0.5266808006870991, train f1: [0.45762166 0.58921162]
+Val 0, loss: 0.7022775192649997, val acc: 0.5450680272108843, val avg acc: 0.5265620375115104, val f1: [0.21821724 0.67919248]
+save weights!!!
+Train 1, loss: 0.6846791744232178, train acc: 0.5777777777777777, train avg acc: 0.5609753682876604, train f1: [0.32862191 0.69205835]
+Val 1, loss: 0.7020205575592664, val acc: 0.5453514739229025, val avg acc: 0.5268594795103206, val f1: [0.21908471 0.67932827]
+save weights!!!
+Train 2, loss: 0.6838102006912231, train acc: 0.5738888888888889, train avg acc: 0.5564651505901349, train f1: [0.32063773 0.68959935]
+Val 2, loss: 0.7013932648970156, val acc: 0.5467687074829932, val avg acc: 0.5276677511838418, val f1: [0.22189781 0.68026395]
+save weights!!!
+Train 3, loss: 0.6831729054450989, train acc: 0.5775, train avg acc: 0.5590457300766625, train f1: [0.32309746 0.69291339]
+Val 3, loss: 0.7015814027007745, val acc: 0.546201814058957, val avg acc: 0.527435064935065, val f1: [0.21864324 0.68024765]
+Train 4, loss: 0.6835408794879914, train acc: 0.5733333333333334, train avg acc: 0.5554410523647849, train f1: [0.31733333 0.68969697]
+Val 4, loss: 0.7017780055805128, val acc: 0.5453514739229025, val avg acc: 0.5266233766233767, val f1: [0.21832359 0.67945643]
+Train 5, loss: 0.6827498662471772, train acc: 0.5811111111111111, train avg acc: 0.5626264667981803, train f1: [0.33156028 0.69498382]
+Val 5, loss: 0.702158480274434, val acc: 0.5453514739229025, val avg acc: 0.5268594795103206, val f1: [0.21908471 0.67932827]
+Train 6, loss: 0.6829774224758148, train acc: 0.5780555555555555, train avg acc: 0.5595434420871219, train f1: [0.32278199 0.69356466]
+Val 6, loss: 0.7019798135270878, val acc: 0.546201814058957, val avg acc: 0.5277250727661977, val f1: [0.22092457 0.67986403]
+Train 7, loss: 0.6839284336566925, train acc: 0.5791666666666667, train avg acc: 0.561974380395433, train f1: [0.3299425  0.69325774]
+Val 7, loss: 0.7015348989136365, val acc: 0.546485260770975, val avg acc: 0.5279957820244543, val f1: [0.22103213 0.68012795]
+Train 8, loss: 0.6846256983280182, train acc: 0.5744444444444444, train avg acc: 0.5575251465230476, train f1: [0.32092199 0.69012945]
+Val 8, loss: 0.7015111117946858, val acc: 0.5459183673469388, val avg acc: 0.5276633734539313, val f1: [0.22081712 0.6796    ]
+Train 9, loss: 0.684167115688324, train acc: 0.5775, train avg acc: 0.5604149262043999, train f1: [0.32966064 0.6915433 ]
+Val 9, loss: 0.7014297563202527, val acc: 0.5470521541950113, val avg acc: 0.5279657249621493, val f1: [0.22276265 0.6804    ]
+save weights!!!
+Train 10, loss: 0.6831666696071624, train acc: 0.5761111111111111, train avg acc: 0.5571915479242033, train f1: [0.31508079 0.69308126]
+Val 10, loss: 0.7015216606003898, val acc: 0.5467687074829932, val avg acc: 0.5278485448889683, val f1: [0.2211398  0.68039176]
+Train 11, loss: 0.6838788175582886, train acc: 0.5741666666666667, train avg acc: 0.5561440432067719, train f1: [0.32317881 0.6893617 ]
+Val 11, loss: 0.7020094990730286, val acc: 0.5459183673469388, val avg acc: 0.5278727011869049, val f1: [0.22081712 0.6796    ]
+Train 12, loss: 0.6838020157814025, train acc: 0.5777777777777777, train avg acc: 0.5590788250109274, train f1: [0.3256433  0.69268095]
+Val 12, loss: 0.7008978602837543, val acc: 0.5467687074829932, val avg acc: 0.5275846406597301, val f1: [0.21961933 0.68064709]
+Train 0, loss: 0.6688402467049085, train acc: 0.6167200854700855, train avg acc: 0.49821742277852993, train f1: [0.03236682 0.76103247]
+Val 0, loss: 0.7051879337855748, val acc: 0.5235260770975056, val avg acc: 0.5, val f1: [0.         0.68725581]
+save weights!!!
+Train 1, loss: 0.6631685449526861, train acc: 0.6231303418803419, train avg acc: 0.5, train f1: [0.         0.76781307]
+Val 1, loss: 0.705199775647144, val acc: 0.5235260770975056, val avg acc: 0.5, val f1: [0.         0.68725581]
+save weights!!!
+Train 2, loss: 0.6636908295062872, train acc: 0.6220619658119658, train avg acc: 0.5, train f1: [0.         0.76700148]
+Val 2, loss: 0.7048388938514554, val acc: 0.5243764172335601, val avg acc: 0.5, val f1: [0.        0.6879881]
+save weights!!!
+Train 3, loss: 0.663535856283628, train acc: 0.6228632478632479, train avg acc: 0.5, train f1: [0.         0.76761027]
+Val 3, loss: 0.7050819068538899, val acc: 0.5238095238095238, val avg acc: 0.5, val f1: [0.     0.6875]
+Train 4, loss: 0.6637509751778382, train acc: 0.6223290598290598, train avg acc: 0.5, train f1: [0.         0.76720448]
+Val 4, loss: 0.7050809629109441, val acc: 0.5238095238095238, val avg acc: 0.5, val f1: [0.     0.6875]
+Train 5, loss: 0.6632266124853721, train acc: 0.6233974358974359, train avg acc: 0.5, train f1: [0.         0.76801579]
+Val 5, loss: 0.7052092223751302, val acc: 0.5235260770975056, val avg acc: 0.5, val f1: [0.         0.68725581]
+Train 6, loss: 0.6633229221288974, train acc: 0.6233974358974359, train avg acc: 0.5, train f1: [0.         0.76801579]
+Val 6, loss: 0.7052103901395992, val acc: 0.5235260770975056, val avg acc: 0.5, val f1: [0.         0.68725581]
+Train 7, loss: 0.6633190810680389, train acc: 0.6231303418803419, train avg acc: 0.5, train f1: [0.         0.76781307]
+Val 7, loss: 0.7052073977431472, val acc: 0.5235260770975056, val avg acc: 0.5, val f1: [0.         0.68725581]
+Train 8, loss: 0.6637136099430231, train acc: 0.6223290598290598, train avg acc: 0.5, train f1: [0.         0.76720448]
+Val 8, loss: 0.7053141666918384, val acc: 0.5232426303854876, val avg acc: 0.5, val f1: [0.         0.68701154]
+Train 9, loss: 0.6637501200804343, train acc: 0.6220619658119658, train avg acc: 0.5, train f1: [0.         0.76700148]
+Val 9, loss: 0.7048546623210518, val acc: 0.5243764172335601, val avg acc: 0.5, val f1: [0.        0.6879881]
+save weights!!!
+Train 10, loss: 0.6634663033943909, train acc: 0.6225961538461539, train avg acc: 0.5, train f1: [0.         0.76740741]
+Val 10, loss: 0.7049784027800268, val acc: 0.5240929705215419, val avg acc: 0.5, val f1: [0.        0.6877441]
+Train 11, loss: 0.6630565902361503, train acc: 0.6233974358974359, train avg acc: 0.5, train f1: [0.         0.76801579]
+Val 11, loss: 0.7054612624401949, val acc: 0.5229591836734694, val avg acc: 0.5, val f1: [0.         0.68676717]
+Train 12, loss: 0.6637513339519501, train acc: 0.6220619658119658, train avg acc: 0.5, train f1: [0.         0.76700148]
+Val 12, loss: 0.7048567205059285, val acc: 0.5243764172335601, val avg acc: 0.5, val f1: [0.        0.6879881]
+save weights!!!
+Train 13, loss: 0.6633518957174741, train acc: 0.6220619658119658, train avg acc: 0.5, train f1: [0.         0.76700148]
+Val 13, loss: 0.7055793672191853, val acc: 0.5226757369614512, val avg acc: 0.5, val f1: [0.         0.68652271]
+Train 14, loss: 0.6635491561431152, train acc: 0.6225961538461539, train avg acc: 0.5, train f1: [0.         0.76740741]
+Val 14, loss: 0.7053414887311508, val acc: 0.5232426303854876, val avg acc: 0.5, val f1: [0.         0.68701154]
+Test acc: 0.5255255255255256, Test avg acc: 0.5, Test f1: [0.         0.68897638]
+Train 0, loss: 0.669456571845685, train acc: 0.6178495762711864, train avg acc: 0.49880537069496667, train f1: [0.02958978 0.76207749]
+Val 0, loss: 0.7067547007040544, val acc: 0.5232954545454546, val avg acc: 0.5, val f1: [0.         0.68705707]
+save weights!!!
+Train 1, loss: 0.6631882322036614, train acc: 0.6226165254237288, train avg acc: 0.5, train f1: [0.         0.76742288]
+Val 1, loss: 0.7067643902518532, val acc: 0.5232954545454546, val avg acc: 0.5, val f1: [0.         0.68705707]
+save weights!!!
+Train 2, loss: 0.6634221430552207, train acc: 0.6226165254237288, train avg acc: 0.5, train f1: [0.         0.76742288]
+Val 2, loss: 0.706136814030734, val acc: 0.524715909090909, val avg acc: 0.5, val f1: [0.         0.68828023]
+save weights!!!
+Train 3, loss: 0.6628767029713776, train acc: 0.6234110169491526, train avg acc: 0.5, train f1: [0.        0.7680261]
+Val 3, loss: 0.7063848061995073, val acc: 0.5241477272727273, val avg acc: 0.5, val f1: [0.         0.68779124]
+Train 4, loss: 0.6633075404975374, train acc: 0.6223516949152542, train avg acc: 0.5, train f1: [0.         0.76722168]
+Val 4, loss: 0.706512287530032, val acc: 0.5238636363636363, val avg acc: 0.5, val f1: [0.         0.68754661]
+Train 5, loss: 0.6628044126397472, train acc: 0.6234110169491526, train avg acc: 0.5, train f1: [0.        0.7680261]
+Val 5, loss: 0.7067750464786183, val acc: 0.5232954545454546, val avg acc: 0.5, val f1: [0.         0.68705707]
+Train 6, loss: 0.6630857122146477, train acc: 0.6228813559322034, train avg acc: 0.5, train f1: [0.         0.76762402]
+Val 6, loss: 0.7065232363614169, val acc: 0.5238636363636363, val avg acc: 0.5, val f1: [0.         0.68754661]
+Train 7, loss: 0.6630453386549222, train acc: 0.623146186440678, train avg acc: 0.5, train f1: [0.         0.76782509]
+Val 7, loss: 0.7067706855860624, val acc: 0.5232954545454546, val avg acc: 0.5, val f1: [0.         0.68705707]
+Train 8, loss: 0.6628678592584901, train acc: 0.623146186440678, train avg acc: 0.5, train f1: [0.         0.76782509]
+Val 8, loss: 0.7067612247033552, val acc: 0.5232954545454546, val avg acc: 0.5, val f1: [0.         0.68705707]
+Train 9, loss: 0.6630081756640289, train acc: 0.6223516949152542, train avg acc: 0.5, train f1: [0.         0.76722168]
+Val 9, loss: 0.7060248396613381, val acc: 0.525, val avg acc: 0.5, val f1: [0.         0.68852459]
+save weights!!!
+Train 10, loss: 0.6629915671833491, train acc: 0.6228813559322034, train avg acc: 0.5, train f1: [0.         0.76762402]
+Val 10, loss: 0.7064042947509072, val acc: 0.5241477272727273, val avg acc: 0.5, val f1: [0.         0.68779124]
+Train 11, loss: 0.66313810772815, train acc: 0.6228813559322034, train avg acc: 0.5, train f1: [0.         0.76762402]
+Val 11, loss: 0.7067844737659801, val acc: 0.5232954545454546, val avg acc: 0.5, val f1: [0.         0.68705707]
+Train 12, loss: 0.6631871209306232, train acc: 0.6228813559322034, train avg acc: 0.5, train f1: [0.         0.76762402]
+Val 12, loss: 0.7062814365733754, val acc: 0.5244318181818182, val avg acc: 0.5, val f1: [0.         0.68803578]
+Train 13, loss: 0.6631212517366571, train acc: 0.6223516949152542, train avg acc: 0.5, train f1: [0.         0.76722168]
+Val 13, loss: 0.7072823556986723, val acc: 0.522159090909091, val avg acc: 0.5, val f1: [0.         0.68607689]
+Train 14, loss: 0.6631514056254242, train acc: 0.6226165254237288, train avg acc: 0.5, train f1: [0.         0.76742288]
+Val 14, loss: 0.7067820126360113, val acc: 0.5232954545454546, val avg acc: 0.5, val f1: [0.         0.68705707]
+Test acc: 0.5255255255255256, Test avg acc: 0.5, Test f1: [0.         0.68897638]
+Train 0, loss: 0.6694494546469996, train acc: 0.6178495762711864, train avg acc: 0.49880537069496667, train f1: [0.02958978 0.76207749]
+Val 0, loss: 0.7069828911261125, val acc: 0.5232954545454546, val avg acc: 0.5, val f1: [0.         0.68705707]
+save weights!!!
+Train 1, loss: 0.6631798491639606, train acc: 0.6226165254237288, train avg acc: 0.5, train f1: [0.         0.76742288]
+Val 1, loss: 0.7069921016693115, val acc: 0.5232954545454546, val avg acc: 0.5, val f1: [0.         0.68705707]
+save weights!!!
+Train 2, loss: 0.663410363561016, train acc: 0.6226165254237288, train avg acc: 0.5, train f1: [0.         0.76742288]
+Val 2, loss: 0.7063621282577515, val acc: 0.524715909090909, val avg acc: 0.5, val f1: [0.         0.68828023]
+save weights!!!
+Train 3, loss: 0.6628566252983222, train acc: 0.6234110169491526, train avg acc: 0.5, train f1: [0.        0.7680261]
+Val 3, loss: 0.7066117709333246, val acc: 0.5241477272727273, val avg acc: 0.5, val f1: [0.         0.68779124]
+Train 4, loss: 0.6633038965322203, train acc: 0.6223516949152542, train avg acc: 0.5, train f1: [0.         0.76722168]
+Val 4, loss: 0.7067398125475103, val acc: 0.5238636363636363, val avg acc: 0.5, val f1: [0.         0.68754661]
+Train 5, loss: 0.6627896316980911, train acc: 0.6234110169491526, train avg acc: 0.5, train f1: [0.        0.7680261]
+Val 5, loss: 0.7070018432357095, val acc: 0.5232954545454546, val avg acc: 0.5, val f1: [0.         0.68705707]
+Train 6, loss: 0.6630729608616587, train acc: 0.6228813559322034, train avg acc: 0.5, train f1: [0.         0.76762402]
+Val 6, loss: 0.7067489559000188, val acc: 0.5238636363636363, val avg acc: 0.5, val f1: [0.         0.68754661]
+Train 7, loss: 0.6630163677668167, train acc: 0.623146186440678, train avg acc: 0.5, train f1: [0.         0.76782509]
+Val 7, loss: 0.7069993615150452, val acc: 0.5232954545454546, val avg acc: 0.5, val f1: [0.         0.68705707]
+Train 8, loss: 0.6628721922130908, train acc: 0.623146186440678, train avg acc: 0.5, train f1: [0.         0.76782509]
+Train 0, loss: 0.6694694464489565, train acc: 0.6178495762711864, train avg acc: 0.49880537069496667, train f1: [0.02958978 0.76207749]
+Val 0, loss: 0.7069919900460677, val acc: 0.5232954545454546, val avg acc: 0.5, val f1: [0.         0.68705707]
+save weights!!!
+Train 1, loss: 0.6631739836628154, train acc: 0.6226165254237288, train avg acc: 0.5, train f1: [0.         0.76742288]
+Val 1, loss: 0.7070014390078458, val acc: 0.5232954545454546, val avg acc: 0.5, val f1: [0.         0.68705707]
+save weights!!!
+Train 2, loss: 0.6634160260022697, train acc: 0.6226165254237288, train avg acc: 0.5, train f1: [0.         0.76742288]
+Val 2, loss: 0.7063710646195845, val acc: 0.524715909090909, val avg acc: 0.5, val f1: [0.         0.68828023]
+save weights!!!
+Train 3, loss: 0.6628482856992948, train acc: 0.6234110169491526, train avg acc: 0.5, train f1: [0.        0.7680261]
+Val 3, loss: 0.7066208882765337, val acc: 0.5241477272727273, val avg acc: 0.5, val f1: [0.         0.68779124]
+Train 4, loss: 0.663300941556187, train acc: 0.6223516949152542, train avg acc: 0.5, train f1: [0.         0.76722168]
+Val 4, loss: 0.706748878955841, val acc: 0.5238636363636363, val avg acc: 0.5, val f1: [0.         0.68754661]
+Train 5, loss: 0.6627865070003575, train acc: 0.6234110169491526, train avg acc: 0.5, train f1: [0.        0.7680261]
+Val 5, loss: 0.7070110407742587, val acc: 0.5232954545454546, val avg acc: 0.5, val f1: [0.         0.68705707]
+Train 6, loss: 0.6630651960938664, train acc: 0.6228813559322034, train avg acc: 0.5, train f1: [0.         0.76762402]
+Val 6, loss: 0.7067580569874157, val acc: 0.5238636363636363, val avg acc: 0.5, val f1: [0.         0.68754661]
+Train 7, loss: 0.6630218998860504, train acc: 0.623146186440678, train avg acc: 0.5, train f1: [0.         0.76782509]
+Val 7, loss: 0.7070078568025069, val acc: 0.5232954545454546, val avg acc: 0.5, val f1: [0.         0.68705707]
+Train 8, loss: 0.6628689210293657, train acc: 0.623146186440678, train avg acc: 0.5, train f1: [0.         0.76782509]
+Val 8, loss: 0.7069988890127702, val acc: 0.5232954545454546, val avg acc: 0.5, val f1: [0.         0.68705707]
+Train 9, loss: 0.6629778368998382, train acc: 0.6223516949152542, train avg acc: 0.5, train f1: [0.         0.76722168]
+Val 9, loss: 0.7062572847713123, val acc: 0.525, val avg acc: 0.5, val f1: [0.         0.68852459]
+save weights!!!
+Train 10, loss: 0.6629692972716639, train acc: 0.6228813559322034, train avg acc: 0.5, train f1: [0.         0.76762402]
+Val 10, loss: 0.7066390135071494, val acc: 0.5241477272727273, val avg acc: 0.5, val f1: [0.         0.68779124]
+Train 11, loss: 0.6631072830345671, train acc: 0.6228813559322034, train avg acc: 0.5, train f1: [0.         0.76762402]
+Val 11, loss: 0.7070199392058633, val acc: 0.5232954545454546, val avg acc: 0.5, val f1: [0.         0.68705707]
+Train 12, loss: 0.6631845276234514, train acc: 0.6228813559322034, train avg acc: 0.5, train f1: [0.         0.76762402]
+Val 12, loss: 0.7065153685483065, val acc: 0.5244318181818182, val avg acc: 0.5, val f1: [0.         0.68803578]
+Train 13, loss: 0.6631128787994385, train acc: 0.6223516949152542, train avg acc: 0.5, train f1: [0.         0.76722168]
+Val 13, loss: 0.707521856914867, val acc: 0.522159090909091, val avg acc: 0.5, val f1: [0.         0.68607689]
+Train 14, loss: 0.6631379511396763, train acc: 0.6226165254237288, train avg acc: 0.5, train f1: [0.         0.76742288]
+Val 14, loss: 0.7070191253315319, val acc: 0.5232954545454546, val avg acc: 0.5, val f1: [0.         0.68705707]
+Test acc: 0.5255255255255256, Test avg acc: 0.5, Test f1: [0.         0.68897638]
+Train 0, loss: 0.6744696838515145, train acc: 0.5831473214285714, train avg acc: 0.4938811850423656, train f1: [0.19590958 0.71864407]
+Val 0, loss: 0.6987709105014801, val acc: 0.525390625, val avg acc: 0.5, val f1: [0.         0.68886044]
+save weights!!!
+Train 1, loss: 0.6650225690432957, train acc: 0.6255580357142857, train avg acc: 0.5, train f1: [0.         0.76965328]
+Val 1, loss: 0.700594296058019, val acc: 0.5201822916666666, val avg acc: 0.5, val f1: [0.         0.68436831]
+Train 2, loss: 0.6663053120885577, train acc: 0.6213727678571429, train avg acc: 0.5, train f1: [0.         0.76647737]
+Val 2, loss: 0.6996111373106638, val acc: 0.5231119791666666, val avg acc: 0.5, val f1: [0.         0.68689891]
+Train 0, loss: 0.6744697093963623, train acc: 0.5831473214285714, train avg acc: 0.4938811850423656, train f1: [0.19590958 0.71864407]
+Val 0, loss: 0.6987713972727457, val acc: 0.525390625, val avg acc: 0.5, val f1: [0.         0.68886044]
+save weights!!!
+Train 1, loss: 0.6650223476546151, train acc: 0.6255580357142857, train avg acc: 0.5, train f1: [0.         0.76965328]
+Val 1, loss: 0.7005946934223175, val acc: 0.5201822916666666, val avg acc: 0.5, val f1: [0.         0.68436831]
+Train 2, loss: 0.6663051417895726, train acc: 0.6213727678571429, train avg acc: 0.5, train f1: [0.         0.76647737]
+Val 2, loss: 0.6996114750703176, val acc: 0.5231119791666666, val avg acc: 0.5, val f1: [0.         0.68689891]
+Train 3, loss: 0.6669598477227348, train acc: 0.6199776785714286, train avg acc: 0.5, train f1: [0.         0.76541509]
+Val 3, loss: 0.6994982063770294, val acc: 0.5234375, val avg acc: 0.5, val f1: [0.         0.68717949]
+Train 0, loss: 0.6688339641461005, train acc: 0.6167200854700855, train avg acc: 0.49821742277852993, train f1: [0.03236682 0.76103247]
+Val 0, loss: 0.7076219125669829, val acc: 0.5175736961451247, val avg acc: 0.5, val f1: [0.         0.68210684]
+save weights!!!
+Train 1, loss: 0.6629931559929481, train acc: 0.6236645299145299, train avg acc: 0.5, train f1: [0.         0.76821846]
+Val 1, loss: 0.7076237457139152, val acc: 0.5175736961451247, val avg acc: 0.5, val f1: [0.         0.68210684]
+save weights!!!
+Train 2, loss: 0.6627307901015649, train acc: 0.624198717948718, train avg acc: 0.5, train f1: [0.         0.76862358]
+Val 2, loss: 0.7076254304574461, val acc: 0.5175736961451247, val avg acc: 0.5, val f1: [0.         0.68210684]
+save weights!!!
+Train 3, loss: 0.6632664421430001, train acc: 0.6233974358974359, train avg acc: 0.5, train f1: [0.         0.76801579]
+Val 3, loss: 0.7076271541264593, val acc: 0.5175736961451247, val avg acc: 0.5, val f1: [0.         0.68210684]
+save weights!!!
+Train 4, loss: 0.6633845006044095, train acc: 0.6228632478632479, train avg acc: 0.5, train f1: [0.         0.76761027]
+Val 4, loss: 0.707628815757985, val acc: 0.5175736961451247, val avg acc: 0.5, val f1: [0.         0.68210684]
+save weights!!!
+Train 5, loss: 0.6634264508118997, train acc: 0.6228632478632479, train avg acc: 0.5, train f1: [0.         0.76761027]
+Val 5, loss: 0.7076313033395883, val acc: 0.5175736961451247, val avg acc: 0.5, val f1: [0.         0.68210684]
+save weights!!!
+Train 6, loss: 0.6632205878312771, train acc: 0.6223290598290598, train avg acc: 0.5, train f1: [0.         0.76720448]
+Val 6, loss: 0.7076333371960387, val acc: 0.5175736961451247, val avg acc: 0.5, val f1: [0.         0.68210684]
+save weights!!!
+Train 7, loss: 0.66312909584779, train acc: 0.6231303418803419, train avg acc: 0.5, train f1: [0.         0.76781307]
+Val 7, loss: 0.7076360121065256, val acc: 0.5175736961451247, val avg acc: 0.5, val f1: [0.         0.68210684]
+save weights!!!
+Train 8, loss: 0.6630647274164053, train acc: 0.6233974358974359, train avg acc: 0.5, train f1: [0.         0.76801579]
+Train 0, loss: 2.863688913373444, train acc: 0.7692307692307693, train avg acc: 0.7240402871847497, train f1: [0.83058824 0.63819095]
+Val 0, loss: 8.269405821756441, val acc: 0.4399092970521542, val avg acc: 0.44310668590396196, val f1: [0.47917765 0.39423666]
+save weights!!!
+Train 1, loss: 0.034868690794190534, train acc: 1.0, train avg acc: 1.0, train f1: [1. 1.]
+Val 1, loss: 8.269428902134603, val acc: 0.4399092970521542, val avg acc: 0.44310668590396196, val f1: [0.47917765 0.39423666]
+save weights!!!
+Train 2, loss: 0.03661363360543664, train acc: 1.0, train avg acc: 1.0, train f1: [1. 1.]
+Val 2, loss: 8.269458262896052, val acc: 0.4399092970521542, val avg acc: 0.44310668590396196, val f1: [0.47917765 0.39423666]
+save weights!!!
+Train 3, loss: 0.03648953605443239, train acc: 1.0, train avg acc: 1.0, train f1: [1. 1.]
+Val 3, loss: 8.26950473019055, val acc: 0.4399092970521542, val avg acc: 0.44310668590396196, val f1: [0.47917765 0.39423666]
+save weights!!!
+Train 4, loss: 0.036237244780820146, train acc: 1.0, train avg acc: 1.0, train f1: [1. 1.]
+Val 4, loss: 8.269544432357867, val acc: 0.4399092970521542, val avg acc: 0.44310668590396196, val f1: [0.47917765 0.39423666]
+save weights!!!
+Train 5, loss: 0.03717584857860437, train acc: 1.0, train avg acc: 1.0, train f1: [1. 1.]
+Val 5, loss: 8.26959571728901, val acc: 0.4399092970521542, val avg acc: 0.44310668590396196, val f1: [0.47917765 0.39423666]
+save weights!!!
+Train 6, loss: 0.03592899760517936, train acc: 1.0, train avg acc: 1.0, train f1: [1. 1.]
+Val 6, loss: 8.269648606071668, val acc: 0.4399092970521542, val avg acc: 0.44310668590396196, val f1: [0.47917765 0.39423666]
+save weights!!!
+Train 7, loss: 0.036043570950054206, train acc: 1.0, train avg acc: 1.0, train f1: [1. 1.]
+Val 7, loss: 8.269704286541257, val acc: 0.4399092970521542, val avg acc: 0.44310668590396196, val f1: [0.47917765 0.39423666]
+save weights!!!
+Train 8, loss: 0.03675425966055347, train acc: 1.0, train avg acc: 1.0, train f1: [1. 1.]
+Val 8, loss: 8.269760257127334, val acc: 0.4399092970521542, val avg acc: 0.44310668590396196, val f1: [0.47917765 0.39423666]
+save weights!!!
+Train 9, loss: 0.036676582522117175, train acc: 1.0, train avg acc: 1.0, train f1: [1. 1.]
+Val 9, loss: 8.269824052343564, val acc: 0.4399092970521542, val avg acc: 0.44310668590396196, val f1: [0.47917765 0.39423666]
+save weights!!!
+Train 10, loss: 0.03551412757056264, train acc: 1.0, train avg acc: 1.0, train f1: [1. 1.]
+Val 10, loss: 8.269906231943441, val acc: 0.4399092970521542, val avg acc: 0.44310668590396196, val f1: [0.47917765 0.39423666]
+save weights!!!
+Train 11, loss: 0.03687781392811583, train acc: 1.0, train avg acc: 1.0, train f1: [1. 1.]
+Val 11, loss: 8.26997247459937, val acc: 0.4399092970521542, val avg acc: 0.44310668590396196, val f1: [0.47917765 0.39423666]
+save weights!!!
+Train 12, loss: 0.03564593718888668, train acc: 1.0, train avg acc: 1.0, train f1: [1. 1.]
+Val 12, loss: 8.270043353036959, val acc: 0.4399092970521542, val avg acc: 0.44310668590396196, val f1: [0.47917765 0.39423666]
+save weights!!!
+Train 13, loss: 0.03565269762363572, train acc: 1.0, train avg acc: 1.0, train f1: [1. 1.]
+Val 13, loss: 8.270125372677434, val acc: 0.4399092970521542, val avg acc: 0.44310668590396196, val f1: [0.47917765 0.39423666]
+save weights!!!
+Train 14, loss: 0.03628850742601431, train acc: 1.0, train avg acc: 1.0, train f1: [1. 1.]
+Val 14, loss: 8.272661760145304, val acc: 0.4399092970521542, val avg acc: 0.44310668590396196, val f1: [0.47917765 0.39423666]
+save weights!!!
+Test acc: 0.42315042315042317, Test avg acc: 0.42257931941476246, Test f1: [0.40361276 0.44144859]
+Train 0, loss: 2.8246214311478584, train acc: 0.7732371794871795, train avg acc: 0.7288949703945099, train f1: [0.83323512 0.64580726]
+Val 0, loss: 8.792491105138039, val acc: 0.44160997732426305, val avg acc: 0.4461261347065433, val f1: [0.49821701 0.37060703]
+save weights!!!
+Train 1, loss: 0.03651987614396673, train acc: 1.0, train avg acc: 1.0, train f1: [1. 1.]
+Val 1, loss: 8.792515808222245, val acc: 0.44160997732426305, val avg acc: 0.4461261347065433, val f1: [0.49821701 0.37060703]
+save weights!!!
+Train 2, loss: 0.03834862752745931, train acc: 1.0, train avg acc: 1.0, train f1: [1. 1.]
+Val 2, loss: 8.792550644096064, val acc: 0.44160997732426305, val avg acc: 0.4461261347065433, val f1: [0.49821701 0.37060703]
+save weights!!!
+Train 3, loss: 0.03821524490530674, train acc: 1.0, train avg acc: 1.0, train f1: [1. 1.]
+Val 3, loss: 8.792622886141952, val acc: 0.44160997732426305, val avg acc: 0.4461261347065433, val f1: [0.49821701 0.37060703]
+save weights!!!
+Train 4, loss: 0.037962354719638824, train acc: 1.0, train avg acc: 1.0, train f1: [1. 1.]
+Val 4, loss: 8.792705106491946, val acc: 0.44160997732426305, val avg acc: 0.4461261347065433, val f1: [0.49821701 0.37060703]
+save weights!!!
+Train 5, loss: 0.038953167816194206, train acc: 1.0, train avg acc: 1.0, train f1: [1. 1.]
+Val 5, loss: 8.792957150206274, val acc: 0.44160997732426305, val avg acc: 0.4461261347065433, val f1: [0.49821701 0.37060703]
+save weights!!!
+Train 6, loss: 0.03762500890745567, train acc: 1.0, train avg acc: 1.0, train f1: [1. 1.]
+Val 6, loss: 8.817231745136027, val acc: 0.44160997732426305, val avg acc: 0.4461261347065433, val f1: [0.49821701 0.37060703]
+save weights!!!
+Train 7, loss: 0.03773947694123937, train acc: 1.0, train avg acc: 1.0, train f1: [1. 1.]
+Val 7, loss: 8.817293168330679, val acc: 0.44160997732426305, val avg acc: 0.4461261347065433, val f1: [0.49821701 0.37060703]
+save weights!!!
+Train 8, loss: 0.0384993886646743, train acc: 1.0, train avg acc: 1.0, train f1: [1. 1.]
+Val 8, loss: 8.817359092284223, val acc: 0.44160997732426305, val avg acc: 0.4461261347065433, val f1: [0.49821701 0.37060703]
+save weights!!!
+Train 9, loss: 0.03840666608168529, train acc: 1.0, train avg acc: 1.0, train f1: [1. 1.]
+Val 9, loss: 8.817428534128227, val acc: 0.44160997732426305, val avg acc: 0.4461261347065433, val f1: [0.49821701 0.37060703]
+save weights!!!
+Train 10, loss: 0.037188271347146765, train acc: 1.0, train avg acc: 1.0, train f1: [1. 1.]
+Val 10, loss: 8.817509036891314, val acc: 0.44160997732426305, val avg acc: 0.4461261347065433, val f1: [0.49821701 0.37060703]
+save weights!!!
+Train 11, loss: 0.038621710398449347, train acc: 1.0, train avg acc: 1.0, train f1: [1. 1.]
+Val 11, loss: 8.817588553136709, val acc: 0.44160997732426305, val avg acc: 0.4461261347065433, val f1: [0.49821701 0.37060703]
+save weights!!!
+Train 12, loss: 0.03731543706873289, train acc: 1.0, train avg acc: 1.0, train f1: [1. 1.]
+Val 12, loss: 8.81767110313688, val acc: 0.44160997732426305, val avg acc: 0.4461261347065433, val f1: [0.49821701 0.37060703]
+save weights!!!
+Train 13, loss: 0.03734523448376702, train acc: 1.0, train avg acc: 1.0, train f1: [1. 1.]
+Val 13, loss: 8.817757099258657, val acc: 0.44160997732426305, val avg acc: 0.4461261347065433, val f1: [0.49821701 0.37060703]
+save weights!!!
+Train 14, loss: 0.038011411706415504, train acc: 1.0, train avg acc: 1.0, train f1: [1. 1.]
+Val 14, loss: 8.817845435775055, val acc: 0.44160997732426305, val avg acc: 0.4461261347065433, val f1: [0.49821701 0.37060703]
+save weights!!!
+Test acc: 0.42478842478842477, Test avg acc: 0.42620581949695874, Test f1: [0.42822252 0.42131283]
