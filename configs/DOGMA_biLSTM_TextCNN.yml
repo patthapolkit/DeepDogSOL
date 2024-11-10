@@ -6,6 +6,7 @@ log_iterations: 100
 patience: 4
 optimizer_parameters:
   lr: 1.0e-3
+  weight_decay: 0.0001
 
 target: sol
 unknown_solubility: False

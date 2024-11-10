@@ -82,7 +82,6 @@ class Solver():
                 train_pred.append((outputs.detach().cpu().numpy() >= 0.5))
 
 
-
             train_true = np.concatenate(train_true)
             train_pred = np.concatenate(train_pred)
 
@@ -136,7 +135,7 @@ class Solver():
                 outstr = f'Val {epoch}, loss: {val_loss*1.0/count}, val acc: {val_acc}, val avg acc: {val_avg_per_class_acc}, val f1: {val_f1}'
 
                 io.cprint(outstr)
-                if val_acc >= best_val_acc:
+                if val_acc > best_val_acc:
                     best_val_acc = val_acc
                     best_epoch = epoch
                     torch.save(self.model.state_dict(), 'outputs/{exp}/models/model-{epoch}.t7'.format(exp=args.exp_name,epoch=str(epoch)))

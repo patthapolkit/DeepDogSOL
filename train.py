@@ -2,7 +2,7 @@ import argparse
 import yaml
 from models import *  # For loading classes specified in config
 from torch.optim import *  # For loading optimizer specified in config
-from torch.utils.data import DataLoader
+from torch.utils.data import DataLoader, WeightedRandomSampler
 from torchvision.transforms import transforms
 from datasets.embeddings_dataset import EmbeddingsDataset
 from datasets.transforms import *
@@ -37,14 +37,22 @@ def train(args):
     #################################################
     # Change dataset above this line
     #################################################
+    print('train set size: ', len(train_set))
+    print('val set size: ', len(val_set))
+    print('test set size: ', len(test_set))
     
     if len(train_set[0][0].shape) == 2:  # if we have per residue embeddings they have an additional length dim
         collate_function = padded_permuted_collate
     else:  # if we have reduced sequence wise embeddings use the default collate function by passing None
         collate_function = None
 
-    train_loader = DataLoader(train_set, batch_size=args.batch_size, shuffle=True, collate_fn=collate_function, drop_last=True)
-    val_loader = DataLoader(val_set, batch_size=args.batch_size, shuffle=True, collate_fn=collate_function, drop_last=True)
+
+    weights = [2.652, 1.605]  # Inversely proportional to class counts
+    sampler = WeightedRandomSampler(weights, num_samples=len(train_set), replacement=True)
+
+    train_loader = DataLoader(train_set, batch_size=args.batch_size, shuffle=False, collate_fn=collate_function, drop_last=True, sampler=sampler)
+    # train_loader = DataLoader(train_set, batch_size=args.batch_size, shuffle=True, collate_fn=collate_function, drop_last=True)
+    val_loader = DataLoader(val_set, batch_size=args.batch_size, shuffle=False, collate_fn=collate_function, drop_last=True)
 
     # for batch in train_loader:
     #     embeddings, sol, metadata = batch
