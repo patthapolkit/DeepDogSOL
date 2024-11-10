@@ -31,7 +31,9 @@ def train(args):
     val_set = EmbeddingsDataset(args.val_embeddings, args.val_remapping, args.unknown_solubility,
                                             key_format=args.key_format, max_length=args.max_length,
                                             embedding_mode=args.embedding_mode, transform=transform)
-
+    test_set = EmbeddingsDataset(args.test_embeddings, args.test_remapping, args.unknown_solubility,
+                                                 key_format=args.key_format, embedding_mode=args.embedding_mode,
+                                                 transform=transform)
     #################################################
     # Change dataset above this line
     #################################################
@@ -41,8 +43,8 @@ def train(args):
     else:  # if we have reduced sequence wise embeddings use the default collate function by passing None
         collate_function = None
 
-    train_loader = DataLoader(train_set, batch_size=args.batch_size, shuffle=True, collate_fn=collate_function,drop_last=True)
-    val_loader = DataLoader(val_set, batch_size=args.batch_size, shuffle=True, collate_fn=collate_function,drop_last=True)
+    train_loader = DataLoader(train_set, batch_size=args.batch_size, shuffle=True, collate_fn=collate_function, drop_last=True)
+    val_loader = DataLoader(val_set, batch_size=args.batch_size, shuffle=True, collate_fn=collate_function, drop_last=True)
 
     # for batch in train_loader:
     #     embeddings, sol, metadata = batch
@@ -61,16 +63,16 @@ def train(args):
 
     # Needs "from torch.optim import *" and "from models import *" to work
     solver = Solver(model, args, globals()[args.optimizer])
-    solver.train(train_loader, val_loader, eval_data=None)
+    solver.train(train_loader, val_loader, test_data=test_set)
 
-    if args.eval_on_test:
+    # if args.eval_on_test:
     ############################################################################
     # Change test set below this line
     ############################################################################
-        test_set = EmbeddingsDataset(args.test_embeddings, args.test_remapping, args.unknown_solubility,
-                                                 key_format=args.key_format, embedding_mode=args.embedding_mode,
-                                                 transform=transform)
-        solver.evaluation(test_set)
+        # test_set = EmbeddingsDataset(args.test_embeddings, args.test_remapping, args.unknown_solubility,
+        #                                          key_format=args.key_format, embedding_mode=args.embedding_mode,
+        #                                          transform=transform)
+        # solver.evaluation(test_set)
     ############################################################################
     # Change test set above this line
     ############################################################################

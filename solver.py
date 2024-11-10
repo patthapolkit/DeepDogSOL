@@ -32,13 +32,13 @@ class Solver():
             self.max_val_acc = 0  # running accuracy to decide whether or not a new model should be saved
         
 
-    def train(self, train_loader: DataLoader, val_loader: DataLoader, eval_data=None):
+    def train(self, train_loader: DataLoader, val_loader: DataLoader, test_data=None):
         """
-        Train and simultaneously evaluate on the val_loader and then estimate the stderr on eval_data if it is provided
+        Train and simultaneously evaluate on the val_loader and then estimate the stderr on test_data if it is provided
         Args:
             train_loader: For training
             val_loader: For validation during training
-            eval_data: For evaluation and estimating stderr after training
+            test_data: For evaluation and estimating stderr after training
 
         Returns:
 
@@ -48,7 +48,7 @@ class Solver():
         
         lr_scheduler = ReduceLROnPlateau(self.optim, mode='min', factor=0.1, patience=1, verbose=True)
 
-        best_test_acc = 0
+        best_val_acc = 0
         for epoch in range(self.start_epoch, args.num_epochs):  # loop over the dataset multiple times
             self.model.train()
             args = self.args
@@ -85,12 +85,13 @@ class Solver():
 
             train_true = np.concatenate(train_true)
             train_pred = np.concatenate(train_pred)
-            outstr = 'Train %d, loss: %.6f, train acc: %.6f, train avg acc: %.6f' % (epoch,
-                                                                                     train_loss*1.0/count,
-                                                                                 metrics.accuracy_score(
-                                                                                     train_true, train_pred),
-                                                                                 metrics.balanced_accuracy_score(
-                                                                                     train_true, train_pred))
+
+            train_loss_cal = train_loss * 1.0 / count
+            train_acc = metrics.accuracy_score(train_true, train_pred)
+            train_avg_per_class_acc = metrics.balanced_accuracy_score(train_true, train_pred)
+            train_f1 = metrics.f1_score(train_true, train_pred, average=None)
+            
+            outstr = f'Train {epoch}, loss: {train_loss_cal}, train acc: {train_acc}, train avg acc: {train_avg_per_class_acc}, train f1: {train_f1}'
             
             
             io.cprint(outstr)
@@ -100,10 +101,10 @@ class Solver():
 
             self.model.eval()
             with torch.no_grad():  
-                test_loss = 0.0
+                val_loss = 0.0
                 count = 0.0
-                test_pred = []
-                test_true = []
+                val_pred = []
+                val_true = []
                 for batch in val_loader:
                     ###################################################
                     # Diff input here
@@ -122,20 +123,21 @@ class Solver():
 
                     lr_scheduler.step(loss)
                     count += self.args.batch_size
-                    test_loss += loss.item() * self.args.batch_size
-                    test_true.append(solubility.cpu().numpy())
-                    test_pred.append((outputs.detach().cpu().numpy() >= 0.5))
-                test_true = np.concatenate(test_true)
-                test_pred = np.concatenate(test_pred)
-                test_acc = metrics.accuracy_score(test_true, test_pred)
-                avg_per_class_acc = metrics.balanced_accuracy_score(test_true, test_pred)
-                outstr = 'Test %d, loss: %.6f, test acc: %.6f, test avg acc: %.6f' % (epoch,
-                                                                                      test_loss*1.0/count,
-                                                                                      test_acc,
-                                                                                      avg_per_class_acc)
+                    val_loss += loss.item() * self.args.batch_size
+                    val_true.append(solubility.cpu().numpy())
+                    val_pred.append((outputs.detach().cpu().numpy() >= 0.5))
+
+                val_true = np.concatenate(val_true)
+                val_pred = np.concatenate(val_pred)
+                val_acc = metrics.accuracy_score(val_true, val_pred)
+                val_avg_per_class_acc = metrics.balanced_accuracy_score(val_true, val_pred)
+                val_f1 = metrics.f1_score(val_true, val_pred, average=None)
+
+                outstr = f'Val {epoch}, loss: {val_loss*1.0/count}, val acc: {val_acc}, val avg acc: {val_avg_per_class_acc}, val f1: {val_f1}'
+
                 io.cprint(outstr)
-                if test_acc >= best_test_acc:
-                    best_test_acc = test_acc
+                if val_acc >= best_val_acc:
+                    best_val_acc = val_acc
                     best_epoch = epoch
                     torch.save(self.model.state_dict(), 'outputs/{exp}/models/model-{epoch}.t7'.format(exp=args.exp_name,epoch=str(epoch)))
                     print("save weights!!!")
@@ -144,18 +146,18 @@ class Solver():
 
 
 
-        if eval_data:  # do evaluation on the test data if a eval_data is provided
+        if test_data:  # do evaluation on the test data if a test_data is provided
             # load checkpoint of best model to do evaluation
             checkpoint = torch.load(os.path.join('outputs/{exp}/models/model-{epoch}.t7'.format(exp=args.exp_name,epoch=str(best_epoch))), map_location=self.device)
             self.model.load_state_dict(checkpoint)
-            self.evaluation(eval_data)
+            self.evaluation(test_data)
 
             
-    def evaluation(self, eval_dataset: Dataset):
+    def evaluation(self, test_dataset: Dataset):
         """
         Estimate the standard error on the provided dataset and write it to evaluation_val.txt in the run directory
         Args:
-            eval_dataset: the dataset for which to estimate the stderr
+            test_dataset: the dataset for which to estimate the stderr
             filename: string to append to the produced visualizations
             lookup_dataset: dataset used for embedding space similarity annotation transfer. If it is none, no annotation transfer will be done
             accuracy_threshold: accuracy to determine the distance below which the annotation transfer is used.
@@ -165,12 +167,12 @@ class Solver():
         """
        
         self.model.eval()
-        if len(eval_dataset[0][0].shape) == 2:  # if we have per residue embeddings they have an additional length dim
+        if len(test_dataset[0][0].shape) == 2:  # if we have per residue embeddings they have an additional length dim
             collate_function = padded_permuted_collate
         else:  # if we have reduced sequence wise embeddings use the default collate function by passing None
             collate_function = None
         io = IOStream('outputs/' + self.args.exp_name + '/run.log')
-        data_loader = DataLoader(eval_dataset, batch_size=self.args.batch_size, collate_fn=collate_function)
+        data_loader = DataLoader(test_dataset, batch_size=self.args.batch_size, collate_fn=collate_function)
         
         with torch.no_grad():  
             
@@ -200,8 +202,9 @@ class Solver():
             test_true = np.concatenate(test_true)
             test_pred = np.concatenate(test_pred)
             test_acc = metrics.accuracy_score(test_true, test_pred)
-            avg_per_class_acc = metrics.balanced_accuracy_score(test_true, test_pred)
-            outstr = 'Test acc: %.6f, Test avg acc: %.6f' % (test_acc,avg_per_class_acc)
+            test_avg_per_class_acc = metrics.balanced_accuracy_score(test_true, test_pred)
+            test_f1 = metrics.f1_score(test_true, test_pred, average=None)
+            outstr = f'Test acc: {test_acc}, Test avg acc: {test_avg_per_class_acc}, Test f1: {test_f1}'
             io.cprint(outstr)
                 
 
@@ -209,11 +212,11 @@ class Solver():
     #
     ###################################################
 
-    def predict_evaluation(self, eval_dataset: Dataset):
+    def predict_evaluation(self, test_dataset: Dataset):
         """
         Estimate the standard error on the provided dataset and write it to evaluation_val.txt in the run directory
         Args:
-            eval_dataset: the dataset for which to estimate the stderr
+            test_dataset: the dataset for which to estimate the stderr
             filename: string to append to the produced visualizations
             lookup_dataset: dataset used for embedding space similarity annotation transfer. If it is none, no annotation transfer will be done
             accuracy_threshold: accuracy to determine the distance below which the annotation transfer is used.
@@ -223,12 +226,12 @@ class Solver():
         """
         
         self.model.eval()
-        if len(eval_dataset[0][0].shape) == 2:  # if we have per residue embeddings they have an additional length dim
+        if len(test_dataset[0][0].shape) == 2:  # if we have per residue embeddings they have an additional length dim
             collate_function = predict_padded_permuted_collate
         else:  # if we have reduced sequence wise embeddings use the default collate function by passing None
             collate_function = None
 
-        data_loader = DataLoader(eval_dataset, batch_size=self.args.batch_size, collate_fn=collate_function)
+        data_loader = DataLoader(test_dataset, batch_size=self.args.batch_size, collate_fn=collate_function)
         identifiers =[]
         sequences = []
         predictions = []
