@@ -15,6 +15,9 @@ from utils.general import padded_permuted_collate,predict_padded_permuted_collat
 
 class Solver():
     def __init__(self, model, args, optim=torch.optim.Adam, eval=False):
+        ################################################
+        # we will use optim.AdamW apply from config
+        ################################################
         self.optim = optim(list(model.parameters()), **args.optimizer_parameters)
         self.args = args
         self.device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
@@ -44,6 +47,7 @@ class Solver():
         io = IOStream('outputs/' + self.args.exp_name + '/run.log')
         
         lr_scheduler = ReduceLROnPlateau(self.optim, mode='min', factor=0.1, patience=1, verbose=True)
+
         best_test_acc = 0
         for epoch in range(self.start_epoch, args.num_epochs):  # loop over the dataset multiple times
             self.model.train()
@@ -101,6 +105,9 @@ class Solver():
                 test_pred = []
                 test_true = []
                 for batch in val_loader:
+                    ###################################################
+                    # Diff input here
+                    ###################################################
                     embedding, sol, metadata = batch  # print('sol',sol)
                 
                     embedding, solubility, sol_known = embedding.to(self.device), sol.to(self.device), metadata['solubility_known'].to(self.device)
@@ -141,7 +148,7 @@ class Solver():
             # load checkpoint of best model to do evaluation
             checkpoint = torch.load(os.path.join('outputs/{exp}/models/model-{epoch}.t7'.format(exp=args.exp_name,epoch=str(best_epoch))), map_location=self.device)
             self.model.load_state_dict(checkpoint)
-            self.evaluation(eval_data, filename='val_data_after_training')
+            self.evaluation(eval_data)
 
             
     def evaluation(self, eval_dataset: Dataset):
@@ -171,6 +178,9 @@ class Solver():
             test_pred = []
             test_true = []
             for batch in data_loader:
+                ###################################################
+                # Diff input here
+                ###################################################
                 embedding, sol, metadata = batch  # print('sol',sol)
 
                 embedding, solubility, sol_known = embedding.to(self.device), sol.to(self.device), metadata['solubility_known'].to(self.device)
@@ -194,6 +204,10 @@ class Solver():
             outstr = 'Test acc: %.6f, Test avg acc: %.6f' % (test_acc,avg_per_class_acc)
             io.cprint(outstr)
                 
+
+    ###################################################
+    #
+    ###################################################
 
     def predict_evaluation(self, eval_dataset: Dataset):
         """

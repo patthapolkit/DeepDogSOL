@@ -5,6 +5,8 @@ import torch
 from Bio import SeqIO
 from torch.utils.data import Dataset
 import torch.nn.functional as F
+import pandas as pd
+import numpy as np
 
 from utils.general import AMINO_ACIDS
 
@@ -35,10 +37,13 @@ class EmbeddingsDataset(Dataset):
         self.solubility_metadata_list = []
         # self.class_weights = torch.zeros(10)
         self.one_hot_enc = []
-        for record in SeqIO.parse(open(remapped_sequences), 'fasta'):
+        # for record in SeqIO.parse(open(remapped_sequences), 'fasta'):
+        for record in pd.read_csv(remapped_sequences).to_dict(orient='records'):
             if key_format == 'hash':
-                solubility = record.description.split(' ')[2].split('-')[-1]
-                id = str(record.id)
+                # solubility = record.description.split(' ')[2].split('-')[-1]
+                # id = str(record.id)
+                solubility = record['label']
+                id = record['id']
             elif key_format == 'fasta_descriptor':
                 solubility = record.description.split(' ')[2].split('-')[-1]
                 id = str(record.description.split(' ')[0]).replace('.','_').replace('/','_')
@@ -47,20 +52,20 @@ class EmbeddingsDataset(Dataset):
                 id = str(record.description)
             else:
                 raise Exception('Unknown key_format: ', key_format)
-            if len(record.seq) <= max_length:
+            if record['sequence_length'] <= max_length:
                 if self.embedding_mode == 'onehot':
                     amino_acid_ids = []
-                    for char in record.seq:
+                    for char in record['sequence']:
                         amino_acid_ids.append(AMINO_ACIDS[char])
                     one_hot_enc = F.one_hot(torch.tensor(amino_acid_ids), num_classes=len(AMINO_ACIDS))
                     self.one_hot_enc.append(one_hot_enc)
                 frequencies = torch.zeros(25)
                 for i, aa in enumerate(AMINO_ACIDS):
-                    frequencies[i] = str(record.seq).count(aa)
-                frequencies /= len(record.seq)
+                    frequencies[i] = str(record['sequence']).count(aa)
+                frequencies /= record['sequence_length']
                 metadata = {'id': id,
-                            'sequence': str(record.seq),
-                            'length': len(record.seq),
+                            'sequence': str(record['sequence']),
+                            'length': record['sequence_length'],
                             'frequencies': frequencies,
                             'solubility_known': not (solubility == 'U')}
 
@@ -85,6 +90,21 @@ class EmbeddingsDataset(Dataset):
         solubility_metadata = self.solubility_metadata_list[index]
         if self.embedding_mode == 'lm':
             embedding = self.embeddings_file[solubility_metadata['metadata']['id']][:]
+            embedding = torch.tensor(embedding, dtype=torch.float32)
+
+            #zero-padding
+            target_shape = (556, 384)
+            padding_needed = target_shape[0] - embedding.shape[1]  # Difference in seq_length
+            if padding_needed > 0:
+                # Add zero-padding to match the desired shape
+                embedding = F.pad(embedding, (0, 0, 0, padding_needed))  # Pad along dimension 0
+            else:
+                embedding = embedding[:target_shape[0], :]
+            
+            # print('Before squeeze:', embedding.shape)
+            embedding = embedding.squeeze(0)
+            # print('AFter squeeze:', embedding.shape)
+
         elif self.embedding_mode == 'profiles':
             embedding = self.embeddings_file[solubility_metadata['metadata']['sequence']][:]
         elif self.embedding_mode == 'onehot':
@@ -92,10 +112,11 @@ class EmbeddingsDataset(Dataset):
         else:
             raise Exception('embedding_mode {} not supported'.format(self.embedding_mode))
 
-        embedding, solubility = self.transform(
-            (embedding,solubility_metadata['solubility']))
+        # embedding, solubility = self.transform(
+        #     (embedding,solubility_metadata['solubility']))
 
-        return embedding, solubility, solubility_metadata['metadata']
+
+        return embedding.clone().detach(), torch.tensor(solubility_metadata['solubility'], dtype=torch.int8), solubility_metadata['metadata']
 
     def __len__(self) -> int:
         return len(self.solubility_metadata_list)

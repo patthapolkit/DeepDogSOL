@@ -22,12 +22,19 @@ def train(args):
 
     seed_all(args.seed)
     transform = transforms.Compose([SolubilityToInt(), ToTensor()])
+    #################################################
+    # Change dataset below this line
+    #################################################
     train_set = EmbeddingsDataset(args.train_embeddings, args.train_remapping, args.unknown_solubility,
                                                max_length=args.max_length, key_format=args.key_format,
                                               embedding_mode=args.embedding_mode, transform=transform)
     val_set = EmbeddingsDataset(args.val_embeddings, args.val_remapping, args.unknown_solubility,
                                             key_format=args.key_format, max_length=args.max_length,
                                             embedding_mode=args.embedding_mode, transform=transform)
+
+    #################################################
+    # Change dataset above this line
+    #################################################
     
     if len(train_set[0][0].shape) == 2:  # if we have per residue embeddings they have an additional length dim
         collate_function = padded_permuted_collate
@@ -35,21 +42,38 @@ def train(args):
         collate_function = None
 
     train_loader = DataLoader(train_set, batch_size=args.batch_size, shuffle=True, collate_fn=collate_function,drop_last=True)
-    val_loader = DataLoader(val_set, batch_size=args.batch_size,shuffle=True, collate_fn=collate_function,drop_last=True)
+    val_loader = DataLoader(val_set, batch_size=args.batch_size, shuffle=True, collate_fn=collate_function,drop_last=True)
+
+    # for batch in train_loader:
+    #     embeddings, sol, metadata = batch
+    #     print(embeddings)
+    #     print(embeddings.shape)
+    #     print(sol)
+    #     print(metadata)
+    #     break
 
     # Needs "from models import *" to work
+    ############################################################################
+    # We will edit this model path to have only biLSTM_TextCNN
+    ############################################################################
     model = globals()[args.model_type](embeddings_dim=train_set[0][0].shape[-1], **args.model_parameters)
     print('trainable params: ', sum(p.numel() for p in model.parameters() if p.requires_grad))
 
     # Needs "from torch.optim import *" and "from models import *" to work
     solver = Solver(model, args, globals()[args.optimizer])
-    solver.train(train_loader, val_loader, eval_data=val_set)
+    solver.train(train_loader, val_loader, eval_data=None)
 
     if args.eval_on_test:
+    ############################################################################
+    # Change test set below this line
+    ############################################################################
         test_set = EmbeddingsDataset(args.test_embeddings, args.test_remapping, args.unknown_solubility,
                                                  key_format=args.key_format, embedding_mode=args.embedding_mode,
                                                  transform=transform)
-        solver.evaluation(test_set, filename='test_set_after_train')
+        solver.evaluation(test_set)
+    ############################################################################
+    # Change test set above this line
+    ############################################################################
 
 
 def parse_arguments():

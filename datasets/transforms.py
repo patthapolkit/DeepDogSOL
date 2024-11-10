@@ -83,7 +83,8 @@ class SolubilityToInt():
         if solubility == 'U': # if solubility is unknown return 0 as well.
             solubility = 0
         else:
-            solubility = SOLUBILITY.index(solubility)  # get solubility as integer
+            # solubility = SOLUBILITY.index(solubility)  # get solubility as integer
+            solubility = solubility
         return embedding, solubility
 
 class Solubility_predict_ToInt():

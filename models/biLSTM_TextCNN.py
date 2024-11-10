@@ -1,6 +1,9 @@
 import torch
 import torch.nn as nn
 
+######################################################################################################
+# Raise topic here: the embedding should be fixed like paper of change to be our owns
+######################################################################################################
 
 class biLSTM_TextCNN(nn.Module):
     def __init__(self, embeddings_dim=1024, output_dim=1, dropout=0.25, kernel_size = 9 ,conv_dropout: float = 0.25):
@@ -17,10 +20,30 @@ class biLSTM_TextCNN(nn.Module):
         
         self.convs = nn.ModuleList()
         for c, k in zip(num_channels, kernel_sizes):
-            self.convs.append(nn.Conv1d(embeddings_dim//2, c, k))
+            # self.convs.append(nn.Conv1d(embeddings_dim//2, c, k))
+            self.convs.append(nn.Conv1d(512, c, k))
             
         self.decoder = nn.Linear(sum(num_channels), 1)
         self.softmax = nn.Sigmoid()
+
+    # def __init__(self, embeddings_dim=384, output_dim=1, dropout=0.25, kernel_size = 9 ,conv_dropout: float = 0.25):
+    #     super(biLSTM_TextCNN, self).__init__()
+        
+    #     hidden_size = 96 
+       
+    #     self.lstm = nn.LSTM(embeddings_dim, hidden_size, bidirectional=True, batch_first=True)
+        
+    #     num_channels = [192,192,192]
+    #     kernel_sizes = [9,6,3]
+    #     self.dropout = nn.Dropout(0.25)
+    
+        
+    #     self.convs = nn.ModuleList()
+    #     for c, k in zip(num_channels, kernel_sizes):
+    #         self.convs.append(nn.Conv1d(embeddings_dim//2, c, k))
+            
+    #     self.decoder = nn.Linear(sum(num_channels), 1)
+    #     self.softmax = nn.Sigmoid()
 
     def forward(self, x: torch.Tensor, mask, **kwargs) -> torch.Tensor:
         """
@@ -32,6 +55,9 @@ class biLSTM_TextCNN(nn.Module):
             classification: [batch_size,output_dim] tensor with logits
         """
         # print('x',x.shape)
+        ###################################################
+        # Commented due to different in input maybe
+        ###################################################
         x = x.permute(0, 2, 1)
         
         lstm_output, _ = self.lstm(x)
